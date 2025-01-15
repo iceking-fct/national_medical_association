@@ -6,8 +6,10 @@ A fully functional project based on Online Voting System which uses Python with 
 
 
 
-ARTHORS: [MIRACLE AMAJAMA](https://github.com/iceking-fct)
-         [SAMUEL EBILOMA]()
+AUTHORS: [MIRACLE AMAJAMA](https://github.com/iceking-fct)
+
+         [SAMUEL EBILOMA](samuelebiloma208@gmail.com)
+
          [GODWIN OKPEH]
 
 
