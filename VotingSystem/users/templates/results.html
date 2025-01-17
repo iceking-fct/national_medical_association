@@ -1,0 +1,18 @@
+<h1>Voting Results for {{ session.name }}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Candidate</th>
+            <th>Vote Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for candidate in candidates %}
+        <tr>
+            <td>{{ candidate.name }}</td>
+            <td>{{ candidate.vote_count }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/voter_dashboard/">Back to Dashboard</a>

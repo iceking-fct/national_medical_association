@@ -1,0 +1,17 @@
+Django>==5.1,<6.0
+djangorestframework
+django-filter
+Pillow
+psycopg2-binary
+django-allauth
+django-crispy-forms
+djangorestframework
+django-storages
+django-compressor
+pytest-django
+flake8
+black
+mysql-connector==2.2.9
+virtualenv==20.0.31
+django-renderpdf
+requests

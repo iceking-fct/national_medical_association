@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+</head>
+<body>
+    <h1>Vote in Session: {{ session.name }}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <ul>
+            {% for candidate in candidates %}
+                <li>
+                    <label>
+                        <input type="radio" name="candidate" value="{{ candidate.id }}">
+                        {{ candidate.name }}
+                    </label>
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Submit Vote</button>
+    </form>
+
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
